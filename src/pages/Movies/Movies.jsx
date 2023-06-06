@@ -1,7 +1,8 @@
 import MovieList from 'components/MovieList/MoviesList';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getMovieBySearch }  from 'servise/movies-api';
+import { getMovieBySearch } from 'servise/movies-api';
+import css from "./Movies.module.css"
 
 
 
@@ -42,15 +43,16 @@ export default function Movies() {
   return (
     <main>
       <div>
-        <form onSubmit={handleSubmit}>
-          <button type="submit"></button>
-          <input
+        <form className={css.Form} onSubmit={handleSubmit}>
+          
+          <input className={css.Input}
             type="text"
           
             placeholder="Search movies"
             name="movieName"
             onChange={e => setSearchQuery(e.target.value)}
           />
+          <button className={css.Button} type="submit">Search</button>
         </form>
       </div>
        <MovieList movies={movies} link={''} />
