@@ -6,9 +6,6 @@ axios.defaults.params = {
   api_key: '9ae8fd93ae6d092b9ce69048ddd475c5',
 };
 
-class fetchMovies {
-  
-}
 
 export const getTrendingMovies = async () => {
   const { data } = await axios.get(`trending/movie/day`, {

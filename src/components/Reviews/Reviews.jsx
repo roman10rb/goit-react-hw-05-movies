@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import css from "./Reviews.module.css"
 import { useEffect, useState } from 'react';
 import { getMovieReviews } from 'servise/movies-api';
 
@@ -32,7 +33,7 @@ export default function Reviews() {
           {reviews.map(({ author, content, id }) => {
             return (
               <li key={id}>
-                <p>Author: {author}</p>
+                <p className={css.Author}>Author: {author}</p>
                 <p>"{content}"</p>
               </li>
             );

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Outlet, useLocation, Link, NavLink } from 'react-router-dom';
+import { useParams, Outlet, useLocation, NavLink } from 'react-router-dom';
 import { getMovieById } from 'servise/movies-api';
 import css from "./MovieDetails.module.css"
 
@@ -68,23 +68,23 @@ export default function MovieDetails() {
                 </div>
               </div>
               <div>
-                <h2>Additional information</h2>
-                <ul>
+                <h2 className={css.InfoTitle}>Additional information</h2>
+                <ul className={css.AddContainer}>
                   <li>
-                    <Link
+                    <NavLink className={css.Item}
                       to="cast"
                       state={{ from: location.state?.from ?? '/' }}
                     >
                       Cast
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink  className={css.Item}
                       to="reviews"
                       state={{ from: location.state?.from ?? '/' }}
                     >
                       Reviews
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

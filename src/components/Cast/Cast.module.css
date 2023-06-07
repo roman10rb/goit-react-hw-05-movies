@@ -1,0 +1,16 @@
+
+.Image {
+width: 250px;
+   height: 375px;
+}
+.List{
+    display: flex;
+    padding: 0;
+    margin: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Character{
+    max-width: 250px;
+}

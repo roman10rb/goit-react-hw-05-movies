@@ -1,7 +1,8 @@
+import photo from './photo/no-picture-available-icon-20.jpg'
 import { useParams } from 'react-router-dom';
+import css from './Cast.module.css';
 import { useEffect, useState } from 'react';
 import { getMovieCast } from 'servise/movies-api';
-
 
 
 const Cast = () => {
@@ -32,20 +33,20 @@ const Cast = () => {
     <>
     
       {cast.length > 0 ? (
-        <ul>
+        <ul className={css.List}>
           {cast.map(({ profile_path, character, original_name, id }) => {
             return (
               <li key={id}>
-                <img
+                <img className={css.Image}
                   src={
                     profile_path
                       ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                      : 'https://m.media-amazon.com/images/I/51dCwRZxtLL.jpg'
+                      : photo
                   }
                   alt={original_name}
                 />
                 <p>{original_name}</p>
-                <p>"{character}"</p>
+                <p className={css.Character}>"{character}"</p>
               </li>
             );
           })}

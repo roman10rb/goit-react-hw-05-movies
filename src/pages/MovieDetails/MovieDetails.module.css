@@ -50,3 +50,40 @@
                 letter-spacing: 0.03em;
                 text-decoration: none;
         }
+
+        .InfoTitle{
+                color: rgb(6, 6, 18);
+                    padding: 5px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: calc(42/36);
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-decoration: none;
+        }
+
+        .AddContainer{
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+
+            
+            
+        }
+        .Item{
+            color: blue;
+                padding: 5px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: calc(42/36);
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+        }
+
+        .Item:hover {
+            scale: 1.1;
+        }
+        [aria-current]{
+            color: orange;
+        }

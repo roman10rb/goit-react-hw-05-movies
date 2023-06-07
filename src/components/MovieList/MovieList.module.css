@@ -5,8 +5,9 @@
 
 .Container {
     text-align: center;
+    padding: 0;
 }
 .Title:hover {
-    scale: 1.1;
+    
     color: blue;
 }

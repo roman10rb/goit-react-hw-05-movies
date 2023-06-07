@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import css from './Navigation.module.css';
 
 
@@ -12,9 +12,9 @@ const AppNav = () => {
     <div >
       <nav className={css.Container}>
         {navItems.map(({ href, text }) => (
-          <Link to={href} key={href} className={css.item}>
+          <NavLink to={href} key={href} className={css.item}>
             {text}
-          </Link>
+          </NavLink>
         ))}
       </nav>
     </div>
