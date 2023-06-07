@@ -43,13 +43,13 @@ export default function MovieDetails() {
 
   return (
     <>
-        <div>
+        <div className={css.Container}>
             
               <NavLink className={css.BottonBack} to={location.state?.from ?? '/'}>
                 Go back
               </NavLink>
               <div>
-                <img
+                <img className={css.ImageMovie}
                   src={
                     poster_path
                       ? `https://image.tmdb.org/t/p/w500${poster_path}`
@@ -58,11 +58,12 @@ export default function MovieDetails() {
                   alt={name || title}
                 />
                 <div>
-                  <h1>{name || title || 'No info'}</h1>
+                  <h1 className={css.Title}>{name || title || 'No info'}</h1>
                   <p>Rating: {vote_average || 'Not found'}</p>
                   <p>Overview:</p>
-                  <p>{overview || 'Not found'}</p>
-                  <h2>Genres:</h2>
+            <p className={css.Overview}>{overview || 'Not found'}</p>
+            
+                  <h2 className={css.Genres}>Genres:</h2>
                   <p>{genres || 'Others'}</p>
                 </div>
               </div>

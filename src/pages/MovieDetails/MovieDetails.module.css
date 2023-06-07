@@ -13,3 +13,40 @@
 .BottonBack{
     scale: 1.1;
 }
+
+.Container{
+    text-align: center;
+}
+
+.ImageMovie{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.Title{
+    color: blue;
+        padding: 5px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+}
+.Overview{
+    width: 700px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .Genres {
+            color: blue;
+                padding: 5px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: calc(42/36);
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-decoration: none;
+        }
