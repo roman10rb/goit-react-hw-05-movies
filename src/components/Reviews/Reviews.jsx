@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import css from "./Reviews.module.css"
 import { useEffect, useState } from 'react';
 import { getMovieReviews } from 'servise/movies-api';
+import PropTypes from 'prop-types';
 
 export default function Reviews() {
   const [reviews, setReviews] = useState([]);
@@ -45,3 +46,7 @@ export default function Reviews() {
     </>
   );
 }
+
+Reviews.propTypes = {
+  getMovieReviews: PropTypes.func,
+};
