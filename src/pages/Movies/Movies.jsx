@@ -41,7 +41,7 @@ export default function Movies() {
   };
 
   return (
-    <main>
+    <main >
       <div>
         <form className={css.Form} onSubmit={handleSubmit}>
           

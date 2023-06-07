@@ -1,0 +1,15 @@
+.BottonBack{
+  
+        color: blue;
+        padding: 5px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        
+}
+.BottonBack{
+    scale: 1.1;
+}

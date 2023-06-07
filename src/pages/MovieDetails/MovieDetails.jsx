@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useParams, Outlet, useLocation, Link } from 'react-router-dom';
-import { getMovieById }  from 'servise/movies-api';
+import { useParams, Outlet, useLocation, Link, NavLink } from 'react-router-dom';
+import { getMovieById } from 'servise/movies-api';
+import css from "./MovieDetails.module.css"
 
 
 export default function MovieDetails() {
@@ -44,9 +45,9 @@ export default function MovieDetails() {
     <>
         <div>
             
-              <Link to={location.state?.from ?? '/'}>
+              <NavLink className={css.BottonBack} to={location.state?.from ?? '/'}>
                 Go back
-              </Link>
+              </NavLink>
               <div>
                 <img
                   src={

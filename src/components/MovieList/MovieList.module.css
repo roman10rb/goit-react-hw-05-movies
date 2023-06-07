@@ -1,0 +1,12 @@
+.Item {
+    text-decoration: none;
+    color: black;
+}
+
+.Container {
+    text-align: center;
+}
+.Title:hover {
+    scale: 1.1;
+    color: blue;
+}

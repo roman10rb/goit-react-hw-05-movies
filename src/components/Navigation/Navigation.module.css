@@ -1,12 +1,8 @@
-.Container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
+
 
 .item {
         margin-bottom: 10px;
-        color: black;
+        color:blue;
             padding: 5px;
             font-weight: 700;
             font-size: 32px;
@@ -17,4 +13,10 @@
 }
 .item:hover {
  scale: 1.25;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
